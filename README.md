@@ -61,7 +61,12 @@ in the pom.xml you can change the Version from theJDBC Driver:
             <version>11.0</version>
         </dependency>
  ```
- Version 11: Workds
- Version 11.10: Failed
- Version 12: Failed
+ **Version 11:** Workds
+ **Version 11.10:** Failed
+ **Version 12:** Failed
+ 
+ with 
+ > mvn test
+
+you should start the test to reproduce the error
  
