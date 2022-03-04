@@ -4,6 +4,8 @@ Sample project to document the Advantage Database Server Error in a small and si
 
 To reproduce the error the Advantage Database Server langage has configured to "GERMAN"
 
+![language encoding settings](/resources/images/language.png)
+
 >com.extendedsystems.jdbc.advantage.ADSException: [iAnywhere Solutions][Advantage JDBC]windows-850
 >        at rentasad.library.db.AdsConnectionTest.encodingCheckQuarterAddress(AdsConnectionTest.java:69)
 
@@ -48,4 +50,18 @@ CREATE TABLE adsexample(
 
 INSERT INTO adsexample (lastname) VALUES ('Müller');
  ```
+ 
+## Run Tests
+
+in the pom.xml you can change the Version from theJDBC Driver:
+ ```
+       <dependency>
+            <groupId>com.extendedsystems.jdbc.advantage</groupId>
+            <artifactId>adsjdbc</artifactId>
+            <version>11.0</version>
+        </dependency>
+ ```
+ Version 11: Workds
+ Version 11.10: Failed
+ Version 12: Failed
  
