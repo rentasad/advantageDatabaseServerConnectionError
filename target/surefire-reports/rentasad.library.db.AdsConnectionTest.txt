@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: rentasad.library.db.AdsConnectionTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.088 s <<< FAILURE! - in rentasad.library.db.AdsConnectionTest
+rentasad.library.db.AdsConnectionTest.encodingCheckQuarterAddress  Time elapsed: 0.025 s  <<< ERROR!
+com.extendedsystems.jdbc.advantage.ADSException: [iAnywhere Solutions][Advantage JDBC]windows-850
+	at rentasad.library.db.AdsConnectionTest.encodingCheckQuarterAddress(AdsConnectionTest.java:69)
+
