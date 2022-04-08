@@ -10,6 +10,12 @@ To reproduce the error the Advantage Database Server langage has configured to "
 >        at rentasad.library.db.AdsConnectionTest.encodingCheckQuarterAddress(AdsConnectionTest.java:69)
 
 
+## ADS Server Preparation
+- use a Windows Ads Server
+- create a path c:\ads
+- share this folder with full access to everyone
+- copy the test dbf file from /testdata in c:\ads
+
 ## Setup
 
 - clone project in a path of your choice
