@@ -19,10 +19,10 @@ public class AdsConnectionTest
 
 	@BeforeEach public void beforeAll()
 	{
-		String host = "//192.168.0.161";
-		//String  host = "//192.168.130.10";
+		String host = "//192.168.111.30";
+		//		String host = "//192.168.130.10";
 		String socket = "6262";
-		String databaseDictionaty = "/ads";
+		String databaseDictionaty = "/vs4/TMPF01/";
 		String lockType = "proprietary";
 		String charType = "OEM";
 		String tableType = "cdx";
@@ -44,14 +44,13 @@ public class AdsConnectionTest
 
 	}
 
-	@Test public void encodingCheckLastname() throws Exception
+	@Test public void encodingCheckQuarterAddress() throws Exception
 	{
 
-		String query = "SELECT NAME FROM V2AD1001 WHERE NUMMER = '1100001159'";
-		String host = "//192.168.112.114";
-		//String  host = "//192.168.130.10";
+		String query = "SELECT NAME FROM F99\\ADRESSEN\\V2AD1001 WHERE NUMMER = '1100001159'";
+		String host = "//192.168.130.10";
 		String socket = "6262";
-		String databaseDictionaty = "/ads";
+		String databaseDictionaty = "/vs4/VS/DG/VC2/";
 		String lockType = "proprietary";
 		String charType = "OEM";
 		String tableType = "cdx";
